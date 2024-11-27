@@ -57,7 +57,7 @@ const Hero = () => {
       <span className='absolute opacity-25 flex -left-[15%] -top-[30%]'> <img src={Light} /></span>
       </motion.div>
       <motion.span  whileInView={{
-        y: [0, -10, 10, -10, 0], 
+        y: [2, -10, 10, -10, 2], 
         transition: {
           duration: 2, 
           repeat: Infinity, 
@@ -115,7 +115,7 @@ const Hero = () => {
         },
       }} className='md:w-[200px] md:-mt-[10%] mt-[40%] w-[100px]' />
     <motion.span  whileInView={{
-        y: [0, -10, 10, -10, 0], 
+        y: [5, -10, 10, -10, 5], 
         transition: {
           duration: 2, 
           repeat: Infinity, 
