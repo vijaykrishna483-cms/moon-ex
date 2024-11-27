@@ -1,4 +1,3 @@
-import React from 'react';
 import Sphere from '../assets/sphere.png';
 import Circles from '../assets/circles.png';
 import Navbar from './Navbar';
@@ -20,40 +19,15 @@ const Hero = () => {
       y: 0,
       x: 0,
       transition: {
-        duration: 1.5,
+        duration: 1,
         ease: 'easeOut',
       },
     },
   };
 
    
-  const rightVariants = {
-    hidden: {
-      opacity: 0,
-      y: 0,
-      x: 100,
-    },
-    show: {
-      opacity: 1,
-      y: 0,
-      x: 0,
-      transition: {
-        duration: 1.5,
-        ease: 'easeOut',
-      },
-    },
-  };
 
-  const waveMotion = {
-    animate: {
-      y: [0, -10, 10, -10, 0], 
-      transition: {
-        duration: 3,
-        repeat: Infinity, 
-        ease: "easeInOut", 
-      },
-    },
-  };
+
 
   
   const wavefMotion = {
@@ -89,16 +63,16 @@ const Hero = () => {
           repeat: Infinity, 
           ease: "easeInOut", 
         },
-      }} className='absolute ml-[7%] mt-[10%] '> <img src={Star} /></motion.span>
+      }} className='absolute ml-[7%] mt-[10%] md:visible hidden'> <img src={Star} /></motion.span>
            <span className='absolute opacity-30 flex left-[60%] top-[30%]'> <img src={Light} /></span>
 
       <motion.div className='flex md:flex-row flex-col justify-center md:items-left items-center mt-[60%] md:mt-[5%]'>
       <motion.div  variants={leftVariants}
         initial="hidden"
-        whileInView="show" className='flex md:w-[60vw]  w-[100vw]  flex-col md:items-start items-center gap-3 justify-center '>
+        whileInView="show" className='flex md:w-[60vw]  w-[100vw]  flex-col md:items-start items-center gap-3 justify-center md:mt-[5%] '>
      <motion.span variants={wavefMotion}  initial="animate"
       animate="animate" className='absolute md:mb-[30%] md:mt-[] -mb-[20%] ml-[70%] md:-ml-[30%]'> <img src={Star} /></motion.span>
-      <h1 className=' md:text-7xl text-4xl md:text-left text-center font-bold text-[white]'>Trusted Multi-Chain <br/><span className='text-[#f9d423]'>DEX</span> Platform</h1>
+      <h1 className=' md:text-7xl md:w-[] w-[90%] text-4xl md:text-left text-center font-bold text-[white]'>Trusted Multi-Chain <br/><span className='text-[#f9d423]'>DEX</span> Platform</h1>
       <p className='text-[#9E9E9E] w-[70%] md:w-[] md:text-left text-center '>Trade, earn, and own crypto on the all-in-one multi-chain DEX</p>
       <motion.div className='flex gap-4 mt-4 md:items-left items-center '> <motion.button whileHover={{
         y: [0, -10, 10, -10, 0], 
@@ -139,7 +113,7 @@ const Hero = () => {
           repeat: Infinity, 
           ease: "easeInOut", 
         },
-      }} className='md:w-[200px] md:mt-[] mt-[50%] w-[100px]' />
+      }} className='md:w-[200px] md:-mt-[10%] mt-[40%] w-[100px]' />
     <motion.span  whileInView={{
         y: [0, -10, 10, -10, 0], 
         transition: {

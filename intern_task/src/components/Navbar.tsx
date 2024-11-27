@@ -4,10 +4,10 @@ import Logo from '../assets/logo.png';
 import Corner from '../assets/corner.png'
 import { motion } from 'framer-motion';
 const navbar = () => {
-  const [active, setActive] = useState(false); // Use boolean instead of string
+  const [active, setActive] = useState(false); 
 
   const toggleMenu = () => {
-    setActive(!active); // Toggle between true and false
+    setActive(!active);
   };
 
   return (
@@ -70,9 +70,9 @@ const navbar = () => {
       </motion.nav>
 
       {/* Mobile */}
-      <motion.nav className="z-30 absolute h-[8vh] w-[100%] bg-[#06121d] flex justify-between items-center pR-4 md:hidden">
+      <motion.nav className="z-30 absolute h-[8vh] w-[100%]  flex justify-between items-center pR-4 md:hidden">
       <img src={Corner}  className="w-[18%] h-full" />
-        <img src={Logo} alt="Logo" className="w-[70%]" />
+        <img src={Logo} alt="Logo" className="w-[70%] mt-[10px]" />
         <div onClick={toggleMenu} className="cursor-pointer mr-[20px]">
           {active ? <RxCross1 className='text-white' size={24} /> : <RxHamburgerMenu size={24}  className='text-white'/>}
         </div>

@@ -1,4 +1,3 @@
-import React from 'react'
 import { IoIosSend } from "react-icons/io";
 import { RiTwitterLine } from "react-icons/ri";
 import { FaRedditAlien } from "react-icons/fa6";

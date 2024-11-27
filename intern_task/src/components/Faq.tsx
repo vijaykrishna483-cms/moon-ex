@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
-import { FaChevronDown, FaChevronUp } from 'react-icons/fa';
-import Plus from '../assets/plus.png'
-import Drop from '../assets/drop.png'
+
 import { FiMinus } from "react-icons/fi";
 import { HiOutlinePlusSmall } from "react-icons/hi2";
 import { motion } from 'framer-motion';

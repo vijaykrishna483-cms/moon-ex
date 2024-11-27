@@ -3,7 +3,6 @@ import './App.css'
 import Table from './components/Table'
 import Faq from './components/Faq'
 import Features from './components/Features'
-import Bg from './assets/Bg.png'
 import Footer from './components/Footer'
 function App() {
 
