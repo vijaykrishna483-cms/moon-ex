@@ -1,0 +1,27 @@
+/* @import './font.css'; */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* @import url('https://fonts.googleapis.com/css2?family=Neue+Machina:wght@400;500;700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500;600;700;800;900&display=swap');
+@import './fonts.css'
+@import  url('./assets/font/fonsu/neuemachina-regular.otf');
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+@font-face {
+    font-family: 'NeueMachinaUltraBold'; /* Custom font name */
+    src: url('./assets/font/fonsu/neuemachina-ultrabold.otf') format('opentype'); /* OTF format */
+    font-weight: bold;
+    font-style: normal;
+  }
+  
+
+  h1 {
+    font-family: 'NeueMachinaUltraBold', sans-serif; /* Fallback to sans-serif */
+  }
+  p{
+    font-family: 'Raleway', sans-serif; /* Fallback to sans-serif */
+  
+  }
+  
